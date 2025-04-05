@@ -1,6 +1,6 @@
-Made by Derek (Yue) Yu (3 hrs, no AI nor autofill)
+Made by **Derek (Yue) Yu** (3 hrs, no AI nor autofill)
 
-Lemonade Catcher is a project I wrote for KPMG's Software Dev. Intern Summer 2026 application! Its purpose is to demonstrate my proficiency in Node.JS, MySQL, HTML/CSS, & Javascript :)
+Lemonade Catcher is a project I wrote for KPMG's Software Dev. Intern Summer 2026 application! Its purpose is to demonstrate my proficiency in **Node.JS, MySQL, HTML/CSS, & Javascript** :)
 
 To streamline this process, streamlit or Flask with Python could be used -- potential future coding project for me.
 
