@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample: Timmy's Lemonade Stand!">
+    <meta name="author" content="Timmy">
+    <meta name="keywords" content="Delicious, affordable lemonade for your summer!">
+    <title>Timmy's Lemonade - Squeeze Your Taste Buds!</title>
+    <link rel="icon" type="image/x-icon" href="https://thumbs.dreamstime.com/b/cute-funny-lemonade-waving-hand-character-vector-drawn-cartoon-kawaii-illustration-icon-isolated-white-background-happy-concept-247562035.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --light-bg: #f4f4f8;
+            --text-color: #333;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            font-family: 'Times New Roman', serif;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background:
+                /* top, transparent black, faked with gradient */ 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.7), 
+                    rgba(0, 0, 0, 0.7)
+                ),
+                /* bottom, image */
+                url('https://thumbs.dreamstime.com/b/cute-funny-lemonade-waving-hand-character-vector-drawn-cartoon-kawaii-illustration-icon-isolated-white-background-happy-concept-247562035.jpg');
+            background-color: var(--primary-color);
+            background-position-y: center;
+            background-position-x: center;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-family: 'Times New Roman', serif;
+        }
+        header h1 {
+            font-size: 2.5em;
+            letter-spacing: -1px;
+        }
+        h3 {
+            font-size: 0.8em;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li1 {
+            margin: 0 15px;
+        }
+        nav ul li1 a {
+            color: aquamarine;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        nav ul li1 a:hover {
+            color: white;
+        }
+        .section-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .section-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .section-card:hover {
+            transform: scale(1.03);
+        }
+        .section-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .section-content {
+            padding: 15px;
+        }
+        .section-content h2 {
+            margin-bottom: 10px;
+            font-size: 1.3em;
+            color: var(--primary-color);
+        }
+        .section-content p {
+            color: #666;
+        }
+        .forum-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .forum-list {
+            list-style-type: none;
+        }
+        .forum-list li {
+            padding: 10px;
+            border-bottom: 1px solid #f1f1f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .forum-list li:last-child {
+            border-bottom: none;
+        }
+        .forum-list li a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .forum-list li span {
+            color: #666;
+            font-size: 0.9em;
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Timmy's Lemonade</h1>
+                <p>Squeeze Your Taste Buds!</p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li1><a href="#">Home</a></li1>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Our Team</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <section>
+                <h2>Our Latest Products!</h2>
+                <div class="section-grid">
+                    <article class="section-card">
+                        <img src="https://thumbs.dreamstime.com/b/cute-funny-lemonade-waving-hand-character-vector-drawn-cartoon-kawaii-illustration-icon-isolated-white-background-happy-concept-247562035.jpg" alt="Lemon1">
+                        <div class="section-content">
+                            <h2>NEW GTA Lemonade</h2>
+                            <p>What rhymes with "lemonade?" GTA! Get yours...</p>
+                            <a href="#" class="cta-button">Order Now</a>
+                        </div>
+                    </article>
+                    <article class="section-card">
+                        <img src="https://thumbs.dreamstime.com/b/cute-funny-lemonade-waving-hand-character-vector-drawn-cartoon-kawaii-illustration-icon-isolated-white-background-happy-concept-247562035.jpg" alt="Lemon2">
+                <div class="section-content">
+                        <h2>STUDENTS' FAV: Mocha Lemonade</h2>
+                        <p>Taste the wonderful flavour of mocha alongside our classic lemonly tinge with...</p>
+                        <a href="#" class="cta-button">Order Now</a>
+                    </div>
+                </article>
+                </div>
+            </section>
+    
+            <section style="margin-top: 40px;">
+                <h2>What the Community is Saying</h2>
+                <div class="section-grid">
+                    <div class="forum-section">
+                        <h3>Item Ratings</h3>
+                        <ul class="forum-list">
+                            <li>
+                                <a href="#">New Watermelon Lemonade</a>
+                                <span>245 discussions</span>
+                            </li>
+                            <li>
+                                <a href="#">Timmy's vs Isabella's</a>
+                                <span>189 discussions</span>
+                            </li>
+                            <li>
+                                <a href="#">sandwiches are surprisingly great!</a>
+                                <span>376 discussions</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="forum-section">
+                        <h3>Your Menu Suggestions!</h3>
+                        <ul class="forum-list">
+                            <li>
+                                <a href="#">New Drinks</a>
+                                <span>512 discussions</span>
+                            </li>
+                            <li>
+                                <a href="#">Dining Atmosphere</a>
+                                <span>287 discussions</span>
+                            </li>
+                            <li>
+                                <a href="#">Misc.</a>
+                                <span>203 discussions</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <h3>**Timmy's Lemonade reports finds no risks nor negative implications for any transactions**</h3>
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Timmy's Lemonade. All Rights Reserved.</p>
+                <p>Connect with us on social media</p>
+            </div>
+        </footer>
+        <!-- In this example, some hidden tax risks and implications of transactions are hiding in these
+         comments! (hypothetical scenario to demonstrate code prowess) -->
+    </body>
+</html>
