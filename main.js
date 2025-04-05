@@ -26,8 +26,8 @@ http.createServer(function (req, res) {
             // Establishing a connection
             var con = mysql.createConnection({
                 host: "localhost",
-                user: "root",
-                password: "20062006mac",
+                user: "usernamehere",
+                password: "passwordhere",
                 database: "companies"
             });
             
